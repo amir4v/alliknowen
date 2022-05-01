@@ -1,0 +1,23 @@
+{% extends 'webapp/layout.html' %}
+
+{% block content %}
+<div style="text-align: center; direction: ltr;">
+    <br>
+
+    <h1>
+        {{ word.word }}
+    </h1>
+    <br>
+
+    <hr>
+    <br><br><br><br><br>
+
+    <a href="/">
+        <button style="font-size: xx-large;">another one</button>
+    </a>
+    <br><br><br><br><br>
+    <a href="/iremember/{{ word.id }}">
+        <button style="font-size: xx-large;">i remember</button>
+    </a>
+</div>
+{% endblock %}
